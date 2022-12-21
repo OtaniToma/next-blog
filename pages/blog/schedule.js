@@ -1,5 +1,6 @@
 import { getPostBySlug } from 'lib/api'
 import Container from 'components/container'
+import PostHeader from 'components/post-header'
 
 export default function Schedule({
   title,
@@ -10,13 +11,13 @@ export default function Schedule({
 }) {
   return (
     <Container>
-      <h1>{title}</h1>
+      <PostHeader title={title} subtitle="Blog Article" publish={publish} />
     </Container>
   )
 }
 
 export async function getStaticProps() {
-  const slug = 'schedule'
+  const slug = "schedule"
 
   const post = await getPostBySlug(slug)
 
