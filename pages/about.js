@@ -1,3 +1,4 @@
+import BlueFrame from 'components/blue-frame'
 import Meta from 'components/meta'
 import Head from 'next/head'
 import Container from 'components/container'
@@ -82,4 +83,8 @@ export default function About() {
       </TwoColumn>
     </Container>
   )
+}
+
+About.getLayout = function getLayout(page) {
+  return <BlueFrame>{page}</BlueFrame>
 }
