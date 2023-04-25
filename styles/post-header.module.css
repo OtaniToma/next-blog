@@ -13,6 +13,7 @@
 
 .title {
   --stack-space: 0.2em;
+  font-size: var(--heading2);
 }
 
 .publish {

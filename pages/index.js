@@ -10,11 +10,11 @@ import { eyecatchLocal } from 'lib/constants'
 export default function Home({ posts }) {
   return (
     <Container>
-      <Meta pageTitle="ブログ" />
-      <Hero title="CUBE" subtitle="アウトプットしていくサイト" imageOn />
+      <Meta pageTitle="Toma Otani Portfolio Website" />
+      <Hero title="Toma Otani" subtitle="Portfolio Website" />
 
       <Posts posts={posts}/>
-      <Pagination nextUrl="/blog" nextText="More Posts" />
+      <Pagination nextUrl="/blog" nextText="Read more" />
     </Container>
   )
 }
