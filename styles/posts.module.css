@@ -6,6 +6,16 @@
   margin-bottom: var(--space-lg);
 }
 
+.gridContainer article {
+  transition: 0.2s all ease-in-out;
+}
+
+
+.gridContainer article:hover {
+  background-color: var(--gray-10);
+  transition: 0.2s all ease-in-out;
+}
+
 .post h2 {
   margin-top: 0.5em;
   font-size: var(--small-heading3);
@@ -15,4 +25,8 @@
 .post figure {
   position: relative;
   aspect-ratio: 16/9;
+}
+
+.post h2 {
+  padding: 0.5em 0 0.5em 0.5em;
 }

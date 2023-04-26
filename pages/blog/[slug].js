@@ -35,7 +35,7 @@ export default function Post({
       <article>
         <PostHeader title={title} subtitle="" publish={publish} />
 
-        <figure>
+        {/* <figure>
           <Image
             key={eyecatch.url}
             src={eyecatch.url}
@@ -48,7 +48,7 @@ export default function Post({
             placeholder='blur'
             blurDataURL={eyecatch.blurDataURL}
           />
-        </figure>
+        </figure> */}
 
         <TwoColumn>
           <TwoColumnMain>

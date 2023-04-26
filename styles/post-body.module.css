@@ -2,6 +2,12 @@
   margin-top: var(--stack-space, 1.5em);
 }
 
+.stack h2 {
+  color: var(--white);
+  background-color: var(--accent);
+  padding: 0.5em;
+}
+
 .stack h2,
 .stack h3 {
   --stack-space: 2em;
@@ -19,4 +25,45 @@
 .stack ul {
   padding: revert;
   list-style: revert;
+}
+
+.stack pre {
+  background-color: #1d2020;
+  color: var(--white);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.stack blockquote {
+  background-color: #fafbfc;
+  border: 1px solid #ddd;
+  padding: 1.5em 1.75em;
+  position: relative;
+}
+
+.stack blockquote::before {
+  color: #c8c8c8;
+  content: "“";
+  font-family: serif;
+  font-size: 300%;
+  left: 10px;
+  line-height: 1.1;
+  position: absolute;
+  top: 0;
+}
+
+.stack blockquote::after {
+  color: #c8c8c8;
+  content: "“";
+  font-family: serif;
+  font-size: 300%;
+  right: 10px;
+  bottom: 0;
+  content: "”";
+  line-height: 0;
+  position: absolute;
+}
+
+.stack blockquote:last-child {
+  margin-bottom: 0;
 }
