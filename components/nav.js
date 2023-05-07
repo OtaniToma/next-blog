@@ -1,19 +1,13 @@
-import Link from 'next/link'
-import styles from 'styles/nav.module.css'
+import Link from "next/link";
+import styles from "styles/nav.module.css";
 
 export default function Nav() {
-
   return (
     <nav>
-      <ul className={styles.list}>
+      {/* <ul className={styles.list}>
         <li>
           <Link href="/">
             <a>Home</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/about">
-            <a>About</a>
           </Link>
         </li>
         <li>
@@ -21,7 +15,7 @@ export default function Nav() {
             <a>Blog</a>
           </Link>
         </li>
-      </ul>
+      </ul> */}
     </nav>
-  )
+  );
 }
